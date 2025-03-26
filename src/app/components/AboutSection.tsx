@@ -54,8 +54,8 @@ const TAB_DATA: TabData[] = [
     id: "education",
     content: (
       <ul className="list-none pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        {/* <li>Fullstack Academy of Code</li> */}
+        <li>Fanshawe College Of Applied Arts And Technology</li>
       </ul>
     ),
   },
@@ -64,8 +64,10 @@ const TAB_DATA: TabData[] = [
     id: "certifications",
     content: (
       <ul className="list-none pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Machine Learning in Production</li>
+        <li>Machine Learning Engineer</li>
+        <li>Google Data Analytics</li>
+        <li>Social Media Marketting</li>
       </ul>
     ),
   },
@@ -87,14 +89,16 @@ const AboutSection: React.FC = () => {
         <div className="w-full max-w-4xl text-center">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg mb-8">
-            Hi, I&apos;m Mbeleck Berle—a passionate Machine Learning Engineer
-            with a strong foundation in Computer Science and advanced AI studies
-            at Fanshawe College of Applied Arts And Technology. I specialize in
-            transforming data into innovative solutions using deep learning,
-            NLP, and cloud technologies. Whether leading cutting-edge projects
-            or mentoring future tech talent, I&apos;m dedicated to pushing the
-            boundaries of what&apos;s possible in AI. Let&apos;s connect and
-            innovate together!
+            Hi, I&apos;m Mbeleck Berle—a Machine Learning Engineer with a knack
+            for turning coffee into code and memes into machine learning models.
+            I&apos;m currently on a quest to teach computers to understand
+            sarcasm, and it&apos;s going really well. When I&apos;m not
+            debugging, you can find me procrastinating by contributing to
+            open-source projects or debating whether tabs or spaces are superior
+            (it&apos;s tabs, obviously). I&apos;m always up for a good nerdy
+            joke or a brainstorming session on how to take over the world with
+            AI. 🚀 Let&apos;s build something awesome together, one line of code
+            and one laugh at a time! Let&apos;s connect and geek out! 🤖
           </p>
           <div className="flex flex-row justify-center items-center gap-4 mb-8">
             {TAB_DATA.map((tabData) => (
