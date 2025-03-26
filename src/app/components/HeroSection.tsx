@@ -3,7 +3,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ModelViewer } from "./model-viewer";
+// import { ModelViewer } from "./model-viewer";
 
 const HeroSection: React.FC = () => {
   return (

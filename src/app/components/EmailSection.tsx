@@ -32,8 +32,9 @@ const EmailSection: React.FC = () => {
 
     const response = await fetch(endpoint, options);
     // Optionally, you can type your response data, e.g.:
-    // const resData: { success: boolean; message: string } = await response.json();
-    const resData = await response.json();
+    // const resData: { success: boolean; message: string } =
+    //   await response.json();
+    // const resData = await response.json();
 
     if (response.status === 200) {
       console.log("Message sent.");
@@ -84,8 +85,8 @@ const EmailSection: React.FC = () => {
                 type="email"
                 id="email"
                 required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="janedoe@gmail.com"
+                className="bg-[#18191E] border text-red-500 text-red-500 text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="NOT WORKING (email to mbeleckberle@gmail.com)"
               />
             </div>
             <div className="mb-6">
