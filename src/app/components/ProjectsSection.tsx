@@ -28,7 +28,7 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    title: "PDF Querry application",
+    title: "PDF Querry Application",
     description:
       "Streamlit-based web application that allows users to upload a PDF file and ask questions based on its contents.",
     image: "/images/projects/2.png",
@@ -38,7 +38,7 @@ const projectsData: Project[] = [
   },
   {
     id: 3,
-    title: "E-commerce product classification",
+    title: "E-commerce Product Classification",
     description: "Categorization of e-commerce products based on description",
     image: "/images/projects/3.png",
     tag: ["All", "Machine Learning"],
@@ -68,7 +68,7 @@ const projectsData: Project[] = [
   },
   {
     id: 6,
-    title: "weather forecasting",
+    title: "Weather Forecasting",
     description:
       "This project uses the last 30 days to predict the weather of the next day",
     image: "/images/projects/6.png",
