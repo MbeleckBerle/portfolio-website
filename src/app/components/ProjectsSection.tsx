@@ -21,7 +21,7 @@ const projectsData: Project[] = [
     title: "Cyber Security Anomaly detection",
     description: "Anomaly detection on the KDD99 dataset",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Machine Learning"],
     gitUrl:
       "https://github.com/MbeleckBerle/KDD-anomaly-detection/blob/main/project2.1.1.ipynb",
     previewUrl: "/",
@@ -32,19 +32,19 @@ const projectsData: Project[] = [
     description:
       "Streamlit-based web application that allows users to upload a PDF file and ask questions based on its contents.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Machine Learning"],
     gitUrl: "https://github.com/MbeleckBerle/langchain_qa_app",
     previewUrl: "/",
   },
-  //   {
-  //     id: 3,
-  //     title: "E-commerce Application",
-  //     description: "Project 3 description",
-  //     image: "/images/projects/3.png",
-  //     tag: ["All", "Web"],
-  //     gitUrl: "/",
-  //     previewUrl: "/",
-  //   },
+    {
+      id: 3,
+      title: "E-commerce Application",
+      description: "Project 3 description",
+      image: "/images/projects/3.png",
+      tag: ["All", "Machine Learning"],
+      gitUrl: "https://github.com/MbeleckBerle/ecommerce_product_classification/blob/main/ecommerce_categorization.ipynb",
+      previewUrl: "/",
+    },
   //   {
   //     id: 4,
   //     title: "Food Ordering Application",
@@ -98,21 +98,21 @@ const ProjectsSection: React.FC = () => {
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-        {/* <ProjectTag
+        <ProjectTag
           onClick={handleTagChange}
           name="All"
           isSelected={tag === "All"}
-        /> */}
+        />
         <ProjectTag
           onClick={handleTagChange}
           name="Machine Learning"
+          isSelected={tag === "Machine Learning"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="web"
           isSelected={tag === "Web"}
         />
-        {/* <ProjectTag
-          onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
-        /> */}
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
