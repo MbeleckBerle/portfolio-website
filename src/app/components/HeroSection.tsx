@@ -15,7 +15,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-1xl sm:text-4xl lg:text-10xl lg:leading-normal font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
               Hello, I&apos;m{" "}
             </span>
@@ -24,15 +24,15 @@ const HeroSection: React.FC = () => {
               sequence={[
                 "Mbeleck",
                 1000,
-                "Full Stack Web Developer",
+                "Full Stack Dev",
                 1000,
-                "Machine Learning Developer",
+                "Machine Learning Dev",
                 1000,
                 "Data Analyst",
                 1000,
               ]}
               wrapper="span"
-              speed={50}
+              speed={40}
               repeat={Infinity}
             />
           </h1>

@@ -36,42 +36,47 @@ const projectsData: Project[] = [
     gitUrl: "https://github.com/MbeleckBerle/langchain_qa_app",
     previewUrl: "/",
   },
-    {
-      id: 3,
-      title: "E-commerce Application",
-      description: "Project 3 description",
-      image: "/images/projects/3.png",
-      tag: ["All", "Machine Learning"],
-      gitUrl: "https://github.com/MbeleckBerle/ecommerce_product_classification/blob/main/ecommerce_categorization.ipynb",
-      previewUrl: "/",
-    },
-  //   {
-  //     id: 4,
-  //     title: "Food Ordering Application",
-  //     description: "Project 4 description",
-  //     image: "/images/projects/4.png",
-  //     tag: ["All", "Mobile"],
-  //     gitUrl: "/",
-  //     previewUrl: "/",
-  //   },
-  //   {
-  //     id: 5,
-  //     title: "React Firebase Template",
-  //     description: "Authentication and CRUD operations",
-  //     image: "/images/projects/5.png",
-  //     tag: ["All", "Web"],
-  //     gitUrl: "/",
-  //     previewUrl: "/",
-  //   },
-  //   {
-  //     id: 6,
-  //     title: "Full-stack Roadmap",
-  //     description: "Project 5 description",
-  //     image: "/images/projects/6.png",
-  //     tag: ["All", "Web"],
-  //     gitUrl: "/",
-  //     previewUrl: "/",
-  //   },
+  {
+    id: 3,
+    title: "E-commerce product classification",
+    description: "Categorization of e-commerce products based on description",
+    image: "/images/projects/3.png",
+    tag: ["All", "Machine Learning"],
+    gitUrl:
+      "https://github.com/MbeleckBerle/ecommerce_product_classification/blob/main/ecommerce_categorization.ipynb",
+    previewUrl: "/",
+  },
+  {
+    id: 4,
+    title: "Sentiment Analysis",
+    description: "Emotion analysis on Human text",
+    image: "/images/projects/4.png",
+    tag: ["All", "Machine Learning"],
+    gitUrl:
+      "https://github.com/MbeleckBerle/twitter-X-sentiment-preprocessing/blob/main/sentiment_preprocessing.ipynb",
+    previewUrl: "/",
+  },
+  {
+    id: 5,
+    title: "Text Generation",
+    description: "This project leverages LSTMs for word level text generation",
+    image: "/images/projects/5.png",
+    tag: ["All", "Machine Learning"],
+    gitUrl:
+      "https://github.com/MbeleckBerle/text_generation_LSTM/blob/main/text_generation.ipynb",
+    previewUrl: "/",
+  },
+  {
+    id: 6,
+    title: "weather forecasting",
+    description:
+      "This project uses the last 30 days to predict the weather of the next day",
+    image: "/images/projects/6.png",
+    tag: ["All", "Data Science"],
+    gitUrl:
+      "https://github.com/MbeleckBerle/pm-data-science/blob/main/pm.ipynb",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -107,6 +112,11 @@ const ProjectsSection: React.FC = () => {
           onClick={handleTagChange}
           name="Machine Learning"
           isSelected={tag === "Machine Learning"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Data Science"
+          isSelected={tag === "Data Science"}
         />
         <ProjectTag
           onClick={handleTagChange}
