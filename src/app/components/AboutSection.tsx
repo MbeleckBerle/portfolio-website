@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 type TabData = {
   title: string;
   id: string;
-  content: JSX.Element;
+  content: React.ReactNode;
 };
 
 const TAB_DATA: TabData[] = [
@@ -88,8 +88,8 @@ const AboutSection: React.FC = () => {
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg mb-8">
             Hi, I'm Mbeleck Berle—a passionate Machine Learning Engineer with a
-            strong foundation in Computer Science and
-            advanced AI studies at Fanshawe College of Applied Arts And Technology. I specialize in
+            strong foundation in Computer Science and advanced AI studies at
+            Fanshawe College of Applied Arts And Technology. I specialize in
             transforming data into innovative solutions using deep learning,
             NLP, and cloud technologies. Whether leading cutting-edge projects
             or mentoring future tech talent, I'm dedicated to pushing the
