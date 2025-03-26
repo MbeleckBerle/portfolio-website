@@ -54,8 +54,8 @@ const TAB_DATA: TabData[] = [
     id: "education",
     content: (
       <ul className="list-none pl-2">
-        <li>Fanshawe College Of Applied Arts And Technology</li>
-        {/* <li>University of California, Santa Cruz</li> */}
+        <li>Fullstack Academy of Code</li>
+        <li>University of California, Santa Cruz</li>
       </ul>
     ),
   },
@@ -64,10 +64,8 @@ const TAB_DATA: TabData[] = [
     id: "certifications",
     content: (
       <ul className="list-none pl-2">
-        <li>Machine Learning in Production</li>
-        <li>Machine Learning Engineer</li>
-        <li>Google Data Analytics</li>
-        <li>Social Media Marketting</li>
+        <li>AWS Cloud Practitioner</li>
+        <li>Google Professional Cloud Developer</li>
       </ul>
     ),
   },
@@ -89,15 +87,14 @@ const AboutSection: React.FC = () => {
         <div className="w-full max-w-4xl text-center">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg mb-8">
-            🎓 A Machine Learning Engineer with a knack for turning coffee into
-            code and memes into machine learning models. 🧠 Currently on a quest
-            to teach computers to understand sarcasm...it's going really well.
-            💻 When I'm not debugging, you can find me procrastinating by
-            contributing to open-source projects or debating whether tabs or
-            spaces are superior (it's tabs, obviously). 🔍 Always up for a good
-            nerdy joke or a brainstorming session on how to take over the world
-            with AI. 🚀 Let's build something awesome together, one line of code
-            and one laugh at a time! Connect with me and let's geek out!
+            Hi, I&apos;m Mbeleck Berle—a passionate Machine Learning Engineer
+            with a strong foundation in Computer Science and advanced AI studies
+            at Fanshawe College of Applied Arts And Technology. I specialize in
+            transforming data into innovative solutions using deep learning,
+            NLP, and cloud technologies. Whether leading cutting-edge projects
+            or mentoring future tech talent, I&apos;m dedicated to pushing the
+            boundaries of what&apos;s possible in AI. Let&apos;s connect and
+            innovate together!
           </p>
           <div className="flex flex-row justify-center items-center gap-4 mb-8">
             {TAB_DATA.map((tabData) => (
