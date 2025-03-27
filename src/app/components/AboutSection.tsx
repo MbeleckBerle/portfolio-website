@@ -21,11 +21,11 @@ const TAB_DATA: TabData[] = [
             <li>Python</li>
             <li>Node.js</li>
             <li>Express</li>
-            <li>Nest.js</li>
-            <li>Angular</li>
+            <li>Next.js</li>
+            {/* <li>Angular</li> */}
             <li>React</li>
             <li>PostgreSQL</li>
-            <li>Git</li>
+            {/* <li>Git</li> */}
             <li>AWS Cloud Products</li>
             <li>Azure</li>
           </ul>
@@ -88,7 +88,7 @@ const AboutSection: React.FC = () => {
       <div className="flex justify-center py-8 px-4 xl:px-16">
         <div className="w-full max-w-4xl text-center">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg mb-8">
+          <p className="text-base lg:text-lg mb-8 text-justify">
             Hi, I&apos;m Mbeleck Berle—a Machine Learning Engineer with a knack
             for turning coffee into code and memes into machine learning models.
             I&apos;m currently on a quest to teach computers to understand
@@ -111,7 +111,7 @@ const AboutSection: React.FC = () => {
               </TabButton>
             ))}
           </div>
-          <div className="mt-8">
+          <div className="mt-8 text-left">
             {TAB_DATA.find((t) => t.id === tab)?.content}
           </div>
         </div>
